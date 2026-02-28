@@ -9,6 +9,7 @@ import {
 } from "recharts";
 
 function Mood() {
+
   const moodMap = {
     "😔 Sad": 1,
     "😞 Lonely": 2,
@@ -18,9 +19,13 @@ function Mood() {
 
   const moods = Object.keys(moodMap);
 
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState(() => {
+    const saved = localStorage.getItem("moodHistory");
+    return saved ? JSON.parse(saved) : [];
+  });
 
   const addMood = (mood) => {
+
     const now = new Date();
 
     const entry = {
@@ -30,11 +35,14 @@ function Mood() {
       time: now.toLocaleTimeString()
     };
 
-    setHistory(prev => [...prev, entry]);
+    const updated = [...history, entry];
+
+    setHistory(updated);
+    localStorage.setItem("moodHistory", JSON.stringify(updated));
   };
 
-  // Insight Summary Logic ⭐
   const getInsight = () => {
+
     if (history.length === 0)
       return "Start logging your mood to see insights 💚";
 
@@ -58,35 +66,41 @@ function Mood() {
   return (
     <div className="page">
 
-      <h2>Mood Logger 📊</h2>
+      <h2 style={{ color:"#2ecc71" }}>
+        Mood Logger 📊
+      </h2>
 
       {/* Mood Buttons */}
-      <div style={{ marginBottom: "15px" }}>
+      <div style={{ marginBottom:"20px" }}>
         {moods.map((m, i) => (
           <button
             key={i}
             onClick={() => addMood(m)}
             style={{
-              margin: "6px",
-              padding: "8px 14px",
-              borderRadius: "10px",
-              border: "none",
-              background: "#4a90e2",
-              color: "white",
-              cursor: "pointer"
+              margin:"6px",
+              padding:"9px 16px",
+              borderRadius:"12px",
+              border:"none",
+              background:"#4a90e2",
+              color:"white",
+              cursor:"pointer",
+              transition:"0.25s"
             }}
+            onMouseOver={(e)=>e.target.style.transform="scale(1.05)"}
+            onMouseOut={(e)=>e.target.style.transform="scale(1)"}
           >
             {m}
           </button>
         ))}
       </div>
 
-      {/* Insight Card ⭐ */}
+      {/* Insight Card */}
       <div style={{
-        background: "#f5f9ff",
-        padding: "15px",
-        borderRadius: "15px",
-        marginBottom: "20px"
+        background:"#f5f9ff",
+        padding:"18px",
+        borderRadius:"18px",
+        marginBottom:"25px",
+        boxShadow:"0 0 10px rgba(0,0,0,0.05)"
       }}>
         <h3>Mood Insight 🌿</h3>
         <p>{getInsight()}</p>
@@ -105,27 +119,30 @@ function Mood() {
         ))}
       </ul>
 
-      {/* Mood Chart */}
+      {/* Chart Section */}
       <h3>Mood Chart 📈</h3>
 
-      <div style={{ width: "100%", height: 350 }}>
+      <div style={{ width:"100%", height:"350px" }}>
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={history} margin={{ top: 20, right: 20, left: 20 }}>
+          <LineChart
+            data={history}
+            margin={{ top:20, right:20, left:20, bottom:20 }}
+          >
 
             <XAxis dataKey="date" />
 
             <YAxis
-              ticks={[1, 2, 3, 4]}
-              tickFormatter={(value) => {
-                const moodLabels = {
-                  1: "Sad",
-                  2: "Lonely",
-                  3: "Stressed",
-                  4: "Happy"
+              ticks={[1,2,3,4]}
+              domain={[1,4]}
+              tickFormatter={(value)=>{
+                const labels = {
+                  1:"Sad",
+                  2:"Lonely",
+                  3:"Stressed",
+                  4:"Happy"
                 };
-                return moodLabels[value] || "";
+                return labels[value] || "";
               }}
-              domain={[1, 4]}
             />
 
             <Tooltip />
@@ -135,6 +152,7 @@ function Mood() {
               dataKey="value"
               stroke="#4a90e2"
               strokeWidth={2}
+              dot={{ r:4 }}
             />
 
           </LineChart>

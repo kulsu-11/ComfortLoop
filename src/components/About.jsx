@@ -1,32 +1,21 @@
-function About({ setPage }) {
+function About() {
   return (
     <div className="page">
-      <h1>About This App 🌿</h1>
 
-      <div className="aboutSection">
-        <p>
-          This Mood Tracker & Support App is designed to help users
-          understand their emotions and feel supported.
-        </p>
+      <h2>About Us 🫶</h2>
 
-        <h3>Features:</h3>
+      <p style={{ lineHeight:"1.6", marginTop:"15px" }}>
+        Comfort Loop is a mental wellness support web application designed to help
+        users track their mood 😌, receive positive reinforcement messages, and access
+        basic emotional support resources.
 
-        <ul>
-          <li>💭 Track daily moods</li>
-          <li>💬 Emotional support chat</li>
-          <li>🐾 Mood-based animated avatar</li>
-          <li>📞 Emergency mental health helpline</li>
-        </ul>
+        <br /><br />
 
-        <p>
-          Our mission is to create a safe digital space
-          where emotions are respected and supported.
-        </p>
-      </div>
+        The goal of this application is to provide a simple and friendly environment
+        where users can express their feelings, monitor emotional patterns, and find
+        encouragement during stressful moments.
+      </p>
 
-      <button className="backButton" onClick={() => setPage("home")}>
-        Back to Home
-      </button>
     </div>
   );
 }
