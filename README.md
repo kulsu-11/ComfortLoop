@@ -149,7 +149,7 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-https://drive.google.com/file/d/1ElVu46JwdvkmNp7hgUl-CvK_LVuxVs9o/view?usp=sharing
+https://drive.google.com/drive/folders/18wc5mVi25ng4RDIR8Xmt7u3_efO9u3L9?usp=drive_link
 
 
 
