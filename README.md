@@ -13,31 +13,8 @@
 ![Screenshot3]!(<Screenshot 2026-03-01 182832.png>)
 *Add caption explaining what this shows*
 
-#### Diagrams
-
-**System Architecture:**
-
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
-
-**Application Workflow:**
-
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
-
----
 
 
-
----
-
-## Additional Documentation
-
-### For Web Projects with Backend:
-
-#### API Documentation
-
-**Base URL:** `https://api.yourproject.com`
 
 ##### Endpoints
 
@@ -74,15 +51,6 @@
 [Add more endpoints as needed...]
 
 ---
-
-
-#### Assembly Instructions
-
-
-
----
-
-### For Scripts/CLI Tools:
 
 #### Command Reference
 
@@ -185,11 +153,6 @@ https://drive.google.com/file/d/1ElVu46JwdvkmNp7hgUl-CvK_LVuxVs9o/view?usp=shari
 
 
 
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
-
----
-
 ## AI Tools Used (Optional - For Transparency Bonus)
 
 If you used AI tools during development, document them here for transparency:
@@ -219,8 +182,8 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
+- [Kulsum Nisar]: [Frontend development, API integration, etc.]
+- [Varalakshmi Arun]: [Database design,  Backend developmen]
 
 ---
 
