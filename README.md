@@ -16,7 +16,7 @@ It then activates a visual comfort mode where the user’s avatar is joined by a
 - Member 2: Varalakshmi Arun - Albertian Institute of Science and Technology
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://comfort-loop.vercel.app/]
 
 ### Project Description
 ComfortLoop is an interactive emotional reflection app that provides visual and conversational comfort to users feeling lonely or emotionally overwhelmed. It combines avatar-based animations with empathetic responses to create a supportive digital presence.
