@@ -1,148 +1,77 @@
-## Project Documentation
+<p align="center">
+  <img src="./img.png" alt="Project Banner" width="100%">
+</p>
 
-### For Software:
+# ComfortLoop💗
 
-#### Screenshots (Add at least 3)
+## Basic Details
+ComfortLoop is an interactive emotional reflection system designed to reduce loneliness by creating a responsive emotional presence.
+When a user expresses a feeling like “I feel lonely,” the app detects the emotion using keyword-based analysis.
+It then activates a visual comfort mode where the user’s avatar is joined by a supportive figure.
 
-![Screenshot1]!(<Screenshot 2026-03-01 182912.png>)
-*Add caption explaining what this shows*
+### Team Name: Éclat
 
-![Screenshot2]!(<Screenshot 2026-03-01 182857.png>)
-*Add caption explaining what this shows*
+### Team Members
+- Member 1: Kulsum Nisar - Albertian Institute of Science and Technology
+- Member 2: Varalakshmi Arun - Albertian Institute of Science and Technology
 
-![Screenshot3]!(<Screenshot 2026-03-01 182832.png>)
-*Add caption explaining what this shows*
+### Hosted Project Link
+[mention your project hosted link here]
 
+### Project Description
+ComfortLoop is an interactive emotional reflection app that provides visual and conversational comfort to users feeling lonely or emotionally overwhelmed. It combines avatar-based animations with empathetic responses to create a supportive digital presence.
 
+### The Problem statement
+Many people experience loneliness and emotional distress, but when they reach out, they often face silence, delayed replies, or unhelpful responses. This lack of immediate emotional support can intensify feelings of isolation.
 
-
-##### Endpoints
-
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
-- **Response:**
-```json
-{
-  "status": "success",
-  "data": {}
-}
-```
-
-**POST /api/endpoint**
-- **Description:** [What it does]
-- **Request Body:**
-```json
-{
-  "field1": "value1",
-  "field2": "value2"
-}
-```
-- **Response:**
-```json
-{
-  "status": "success",
-  "message": "Operation completed"
-}
-```
-
-[Add more endpoints as needed...]
+### The Solution
+ComfortLoop 2.0 detects emotional keywords and activates a responsive comfort mode with reflective messages and visual support animations. It keeps users engaged through interactive prompts while also encouraging real-world support when needed.
 
 ---
 
-#### Command Reference
+## Technical Details
 
-**Basic Usage:**
+### Technologies/Components Used
+
+**For Software:**
+- Languages used: JavaScript, Python
+- Frameworks used: React
+
+**For Hardware:**
+- Main components: Laptop
+- Specifications: Windows 10+
+
+---
+
+## Features
+
+Emotion Detection System: Identifies user emotions using keyword-based analysis and activates the appropriate comfort mode.
+
+Interactive Comfort Loop: Provides empathetic responses with options like “Tell me more” and “Let’s reframe this” to continue emotional reflection.
+
+Avatar-Based Visual Support: Displays the user’s avatar alongside a comforting figure with subtle animations for emotional presence.
+
+Built-in Safety Layer: Detects extreme phrases and gently encourages users to seek real-world support when necessary.
+
+---
+
+## Implementation
+### For Software:
+
+#### Installation
 ```bash
-python script.py [options] [arguments]
-```
+npm install
 
-**Available Commands:**
-- `command1 [args]` - Description of what command1 does
-- `command2 [args]` - Description of what command2 does
-- `command3 [args]` - Description of what command3 does
-
-**Options:**
-- `-h, --help` - Show help message and exit
-- `-v, --verbose` - Enable verbose output
-- `-o, --output FILE` - Specify output file path
-- `-c, --config FILE` - Specify configuration file
-- `--version` - Show version information
-
-**Examples:**
-
+#### Run
 ```bash
-# Example 1: Basic usage
-python script.py input.txt
-
-# Example 2: With verbose output
-python script.py -v input.txt
-
-# Example 3: Specify output file
-python script.py -o output.txt input.txt
-
-# Example 4: Using configuration
-python script.py -c config.json --verbose input.txt
+npm start
 ```
 
-#### Demo Output
+---
 
-**Example 1: Basic Processing**
 
-**Input:**
-```
-This is a sample input file
-with multiple lines of text
-for demonstration purposes
-```
 
-**Command:**
-```bash
-python script.py sample.txt
-```
 
-**Output:**
-```
-Processing: sample.txt
-Lines processed: 3
-Characters counted: 86
-Status: Success
-Output saved to: output.txt
-```
-
-**Example 2: Advanced Usage**
-
-**Input:**
-```json
-{
-  "name": "test",
-  "value": 123
-}
-```
-
-**Command:**
-```bash
-python script.py -v --format json data.json
-```
-
-**Output:**
-```
-[VERBOSE] Loading configuration...
-[VERBOSE] Parsing JSON input...
-[VERBOSE] Processing data...
-{
-  "status": "success",
-  "processed": true,
-  "result": {
-    "name": "test",
-    "value": 123,
-    "timestamp": "2024-02-07T10:30:00"
-  }
-}
-[VERBOSE] Operation completed in 0.23s
-```
 
 ---
 
@@ -151,51 +80,36 @@ python script.py -v --format json data.json
 ### Video
 https://drive.google.com/drive/folders/18wc5mVi25ng4RDIR8Xmt7u3_efO9u3L9?usp=drive_link
 
+This video demonstrates the core features and user experience of the ComfortLoop app.
+It begins with the user launching the app and entering their name, followed by selecting an avatar and navigating to the mood screen.
+The video shows how the system detects emotions from the user’s text input and transitions into the interactive comfort loop.
+When the user types an emotional phrase (like “I feel lonely”), the app displays the avatar alongside a comforting figure with gentle animations.
+The app responds with empathetic and reflective messages, offering interaction options such as continuing the conversation or reframing thoughts.
+You can see how the interface reacts visually and textually, strengthening the sense of emotional presence rather than simple replies.
+The demo also highlights technical flow, smooth state transitions, and how user choices influence the dialogue path.
 
 
-## AI Tools Used (Optional - For Transparency Bonus)
+---
 
-If you used AI tools during development, document them here for transparency:
+## AI Tools Used 
 
-**Tool Used**:  Chat GPT
+**Tool Used:** 
+   ChatGPT
 
-**Purpose:** What you used it for
-- Debugging assistance
-- Code review and optimization suggestions
+**Purpose:** 
+- "Code review and optimization suggestions"
 
-**Key Prompts Used:**
-- ["Create a REST API endpoint for user authentication"]
-- ["Debug this async function that's causing race conditions"]
-- ["Optimize this database query for better performance"]
-
-**Percentage of AI-generated code:** [Approximately X%]
-
+ 
 **Human Contributions:**
 - Architecture design and planning
-- Custom logic implementation
 - Integration and testing
 - UI/UX design decisions
-
-*Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
 
 ---
 
 ## Team Contributions
 
-- [Kulsum Nisar]: [Frontend development, API integration, etc.]
-- [Varalakshmi Arun]: [Database design,  Backend developmen]
-
----
-
-## License
-
-This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
-
-**Common License Options:**
-- MIT License (Permissive, widely used)
-- Apache 2.0 (Permissive with patent grant)
-- GPL v3 (Copyleft, requires derivative works to be open source)
-
----
+- Kulsum Nisar: Specific contributions - Frontend development, API integration, etc.
+- Varalakshmi Arun: Specific contributions - Backend development, Database design, etc.
 
 Made with ❤️ at TinkerHub
