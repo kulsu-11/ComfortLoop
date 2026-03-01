@@ -68,7 +68,21 @@ npm start
 ```
 
 ---
+## Project Documentation
 
+### For Software:
+
+
+#### Screenshots
+
+![avatar](https://github.com/user-attachments/assets/7c493653-d349-4f1e-9aab-bd799cb69d37)
+This screenshot shows the Profile page where users can enter their name and select an avatar (boy or girl). The selected avatar is highlighted, and users can save their profile. This feature allows personalization of the app experience.
+
+![chatbot](https://github.com/user-attachments/assets/547d667d-dde0-4e8c-905b-1f44694ac482)
+This screenshot shows the Support Chat feature of Comfort Loop. The user types a distress message, and the chatbot responds with a supportive message along with the KIRAN Mental Health Helpline (1800-599-0019) for users in India. It demonstrates the app’s emotional support and crisis guidance functionality.
+
+![about](https://github.com/user-attachments/assets/02e2ac29-117b-40d7-81ce-3dba92edf869)
+This screenshot displays the About Us page. It explains the purpose of Comfort Loop — a mental wellness web application designed to help users track their mood, receive positive reinforcement, and access emotional support resources in a simple and friendly environment.
 
 
 
